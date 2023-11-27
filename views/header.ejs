@@ -1,0 +1,148 @@
+   
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins-Bold", Helvetica;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: 100vh;
+            background-color: transparent;
+            /*background-image: url(/images/backgroung.jpg);
+            background-size: cover;
+            background-position: center;*/
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        * {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+
+        }
+
+        a:hover {
+            color: rgb(255, 64, 0);
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            padding: 1rem 2rem;
+        }
+
+        .navbar {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2 auto;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            justify-content: space-between;
+            z-index: 2;
+            color: aqua;
+            transition: all 0.3s ease;
+            background-color: none;
+            /* Set your desired background color */
+            padding: 3px;
+            margin: 5px;
+            margin-right: auto;
+            /* Add padding for better visibility */
+            border-radius: 12px;
+            /* Add border-radius for rounded corners */
+        }
+
+        .navbar .logo {
+            /*width: 110px;*/
+
+            display: flex;
+            /* Adjust the width of the logo */
+            height: 85px;
+            /* Adjust the height of the logo */
+            overflow: hidden;
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 6rem;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .navbar .toggle_btn {
+            color: #ffffff;
+            font-size: 2rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .action_btn {
+            background-color: rgb(242, 68, 5);
+            color: #ffffff;
+            padding: 0.8rem 2rem;
+            border: none;
+            outline: none;
+            border-radius: 24px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            /* Change 'scale' to 'transform' */
+        }
+
+        .action_btn:hover {
+            transform: scale(1.05);
+            color: black;
+        }
+
+        .action_btn:active {
+            transform: scale(0.95);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="images/nepalcareslogos.png" alt="logo">
+            </div>
+            <ul class="links">
+                <li> <a href="/home">HOME</a></li>
+                <li> <a href="/discover">DISCOVER</a></li>
+                <li> <a href="/discover">FORUMS</a></li>
+                <li> <a href="/about">ABOUT</a></li>
+                <li> <a href="/contact">CONTACT US</a></li>
+            </ul>
+            <a href="joinus" class="action_btn">JOIN US</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+      
+    
+    
+
+</body>
+
+</html>

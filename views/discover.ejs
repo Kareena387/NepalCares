@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover page</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+  <style>
+    @media(max-width: 700px) {
+      .discover {
+        flex-direction: column;
+      }
+    }
+
+    .discover {
+      background-color: #ffffff;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .discover .div {
+      background-color: #ffffff;
+      overflow: hidden;
+      width: 1280px;
+      height: 270px;
+      position: relative;
+    }
+
+    .discover .discover-those-in {
+      position: absolute;
+      width: 439px;
+      top: 145px;
+      left: 432px;
+      font-family: "Lora-Bold", Helvetica;
+      font-weight: 700;
+      color: transparent;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+      margin: 8px;
+      padding: 0 5px;
+      justify-content: center;
+    }
+
+    .discover .text-wrapper {
+      color: #161923;
+    }
+
+    .discover .span {
+      color: #c95501;
+    }
+
+    .discover .search-bar {
+      position: absolute;
+      width: 612px;
+      height: 40px;
+      top: 214px;
+      left: 370px;
+      right: 400px;
+    }
+
+    .discover .overlap-group {
+      width: 560px;
+      height: 40px;
+      left: 0;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #161923;
+      position: absolute;
+      top: 0;
+    }
+
+    .discover .text-wrapper-2 {
+      position: absolute;
+      top: 6px;
+      left: 17px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #00000070;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .discover .overlap {
+      width: 42px;
+      height: 40px;
+      left: 570px;
+      right: 400px;
+      background-color: #c95501;
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .discover .overlap i {
+      color: #121111;
+      /* Change color of the search icon */
+      font-size: 20px;
+      /* Adjust the size of the search icon */
+    }
+
+
+    .discover .material-symbols {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 8px;
+      left: 9px;
+    }
+
+    .discover .navbar {
+      position: absolute;
+      width: 1182px;
+      height: 56px;
+      top: 17px;
+      left: 28px;
+    }
+
+    .discover .overlap-2 {
+      width: 71px;
+      height: 56px;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .discover .vector {
+      position: absolute;
+      width: 27px;
+      height: 26px;
+      top: 30px;
+      left: 0;
+    }
+
+    .discover .img {
+      position: absolute;
+      width: 46px;
+      height: 48px;
+      top: 0;
+      left: 25px;
+    }
+
+    .discover .nepal-cares {
+      position: absolute;
+      width: 141px;
+      top: 17px;
+      left: 80px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      color: transparent;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: normal;
+      white-space: nowrap;
+    }
+
+    .discover .text-wrapper-3 {
+      left: 709px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      position: absolute;
+      top: 18px;
+      color: #161923;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .discover .text-wrapper-4 {
+      left: 919px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      position: absolute;
+      top: 18px;
+      color: #161923;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .discover .text-wrapper-5 {
+      left: 804px;
+      font-family: "Poppins-Bold", Helvetica;
+      font-weight: 700;
+      position: absolute;
+      top: 18px;
+      color: #161923;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .discover .text-wrapper-6 {
+      position: absolute;
+      top: 18px;
+      left: 1013px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #161923;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .discover .text-wrapper-7 {
+      position: absolute;
+      top: 18px;
+      left: 1125px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #161923;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+
+    .need-col:hover {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @media(max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    .help {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .need-col {
+      flex-basis: 31%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      text-align: left;
+
+    }
+
+    .need-col img {
+      width: 100%;
+      border-radius: 10px;
+
+    }
+
+    .need-col p {
+      padding: 10px;
+    }
+
+    .need-col h3 {
+      margin-top: 16px;
+      margin-bottom: 15px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    @media(max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* Adjust this based on your preference */
+    }
+
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 10px;
+    }
+
+    .card {
+      flex: 0 0 29%;
+      /* Adjust this width percentage to fit three cards in a row with some space */
+      margin-bottom: 20px;
+      /* Adjust as needed */
+      padding: 20px;
+      /* Add border styles as desired */
+      border-radius: 5px;
+      /* Add border radius for rounded corners */
+    }
+
+    .need-col {
+      text-align: left;
+      /* Adjust as needed */
+    }
+
+    .need-col img {
+      width: 100%;
+      /* Adjust as needed */
+      border-radius: 5px;
+      /* Add border radius for image */
+    }
+
+    .navbar .overlap-2 .vector {
+      position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    right: 150px;
+    left: 35px;
+      
+    }
+  </style>
+  <div class="discover">
+    <div class="div">
+      <p class="discover-those-in">
+        <span class="text-wrapper">Discover</span> <span class="span"> those in need</span>
+      </p>
+      <div class="search-bar">
+        <div class="overlap-group">
+          <div class="text-wrapper-2">Search</div>
+        </div>
+        <div class="overlap"><i class="uil uil-search"></i></div>
+      </div>
+
+      <div class="navbar">
+        <div class="overlap-2">
+          <img class="vector" src="images/logo.png" />
+        </div>
+        <!--<p class="nepal-cares"><span class="text-wrapper">Nepal</span> <span class="span">Cares</span></p>
+        -->
+        <div class="text-wrapper-3"><a href="/" style="color: #000000">Home</a></div>
+        <div class="text-wrapper-4"><a href="/about" style="color: #000000">About</a></div>
+        <div class="text-wrapper-5"><a href="/discover" style="color: #000000">Discover</a></div>
+        <div class="text-wrapper-6"><a href="/contact" style="color: #000000">Contact</a></div>
+        <div class="text-wrapper-7"><a href="/joinus" style="color: #000000">Join us</a></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Section to explore receiver-->
+  <section class="help">
+    <h1> Whom we support</h1>
+    <p>Hello, Beautiful soul. Let's listen the story of our people who are supported during their needs. </p>
+
+    <div class="row">
+      <ul class="card-list">
+        <% donateList.forEach(function(user) { %>
+          <li class="card">
+            <div class="need-col">
+              <img src= <%= user.image %> alt="image of people">
+              <h3>Username: <%= user.id %>
+              </h3>
+              <p>Details: <%= user.details %>
+              </p>
+              <button class="text-wrapper-3"><a href="/joinus" style="color: #000000">Donate now</a>
+            </div>
+          </li>
+          <% }) %>
+      </ul>
+    </div>
+
+    </div>
+
+  </section>
+  
+  <footer>
+    <%- include('./footer'); %>
+  </footer>
+
+</body>
+
+</html>

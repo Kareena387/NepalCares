@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <style>
+    .search-results {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .search-results .div {
+      background-color: #ffffff;
+      overflow: hidden;
+      width: 1280px;
+      height: 832px;
+      position: relative;
+    }
+
+    .search-results .discover-those-in {
+      position: absolute;
+      width: 439px;
+      top: 58px;
+      left: 395px;
+      font-family: "Lora-Bold", Helvetica;
+      font-weight: 700;
+      color: transparent;
+      font-size: 40px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .text-wrapper {
+      color: #161923;
+    }
+
+    .search-results .span {
+      color: #c95501;
+    }
+
+    .search-results .search-bar {
+      position: absolute;
+      width: 612px;
+      height: 40px;
+      top: 192px;
+      left: 309px;
+    }
+
+    .search-results .overlap-group {
+      position: absolute;
+      width: 560px;
+      height: 40px;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #161923;
+    }
+
+    .search-results .search {
+      position: absolute;
+      top: 6px;
+      left: 17px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .overlap {
+      position: absolute;
+      width: 42px;
+      height: 40px;
+      top: 0;
+      left: 570px;
+      background-color: #c95501;
+      border-radius: 10px;
+    }
+
+    .search-results .material-symbols {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 8px;
+      left: 9px;
+    }
+
+    .search-results .break-line {
+      position: absolute;
+      width: 1006px;
+      height: 6px;
+      top: 305px;
+      left: 131px;
+      object-fit: cover;
+    }
+
+    .search-results .div-2 {
+      position: absolute;
+      width: 1049px;
+      height: 301px;
+      top: 416px;
+      left: 145px;
+    }
+
+    .search-results .rectangle {
+      left: 0;
+      position: absolute;
+      width: 285px;
+      height: 301px;
+      top: 0;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+    }
+
+    .search-results .rectangle-2 {
+      left: 382px;
+      position: absolute;
+      width: 285px;
+      height: 301px;
+      top: 0;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+    }
+
+    .search-results .rectangle-3 {
+      left: 764px;
+      position: absolute;
+      width: 285px;
+      height: 301px;
+      top: 0;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+    }
+
+    .search-results .search-results-for {
+      position: absolute;
+      top: 348px;
+      left: 510px;
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      color: transparent;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .filter-search {
+      position: absolute;
+      width: 63px;
+      height: 23px;
+      top: 352px;
+      left: 1079px;
+    }
+
+    .search-results .text-wrapper-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "Poppins-Medium", Helvetica;
+      font-weight: 500;
+      color: #161923;
+      font-size: 15px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .octicon-filter {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 4px;
+      left: 45px;
+    }
+
+    .search-results .footer {
+      position: absolute;
+      width: 1282px;
+      height: 72px;
+      top: 761px;
+      left: 0;
+      background-color: transparent;
+    }
+
+    .search-results .overlap-2 {
+      position: relative;
+      width: 1280px;
+      height: 72px;
+      background-color: #c95501;
+    }
+
+    .search-results .phone {
+      position: absolute;
+      width: 139px;
+      height: 19px;
+      top: 14px;
+      left: 79px;
+    }
+
+    .search-results .element {
+      position: absolute;
+      top: 0;
+      left: 31px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .ph-phone-light {
+      position: absolute;
+      width: 20px;
+      height: 18px;
+      top: 1px;
+      left: 0;
+    }
+
+    .search-results .email {
+      position: absolute;
+      width: 165px;
+      height: 18px;
+      top: 36px;
+      left: 79px;
+    }
+
+    .search-results .info-nepalcares-org {
+      position: absolute;
+      top: 0;
+      left: 34px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: #ffffff;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .img {
+      position: absolute;
+      width: 20px;
+      height: 18px;
+      top: 0;
+      left: 0;
+    }
+
+    .search-results .social-media {
+      position: absolute;
+      width: 128px;
+      height: 25px;
+      top: 26px;
+      left: 1022px;
+    }
+
+    .search-results .copyright {
+      position: absolute;
+      top: 27px;
+      left: 490px;
+      font-family: "Poppins-Regular", Helvetica;
+      font-weight: 400;
+      color: transparent;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .search-results .text-wrapper-3 {
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+    .need-col p {
+      padding: 10px;
+    }
+
+    .need-col h3 {
+      margin-top: 16px;
+      margin-bottom: 15px;
+      text-align: left;
+      padding: 10px;
+    }
+
+    .need-col:hover {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    @media(max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* Adjust this based on your preference */
+    }
+
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 10px;
+    }
+
+    .card {
+      flex: 0 0 29%;
+      /* Adjust this width percentage to fit three cards in a row with some space */
+      margin-bottom: 20px;
+      /* Adjust as needed */
+      padding: 20px;
+      /* Add border styles as desired */
+      border-radius: 5px;
+      /* Add border radius for rounded corners */
+    }
+
+    .need-col {
+      text-align: left;
+      /* Adjust as needed */
+    }
+
+    .need-col img {
+      width: 100%;
+      /* Adjust as needed */
+      border-radius: 5px;
+      /* Add border radius for image */
+    }
+    
+    
+  </style>
+  <div class="search-results">
+    <div class="div">
+      <p class="discover-those-in">
+        <span class="text-wrapper">Discover</span> <span class="span"> those in need</span>
+      </p>
+      <div class="search-bar">
+        <input class="overlap-group" placeholder="search">
+      </div>
+    </div>
+    <img class="break-line" src="img/break-line.svg" />
+    <div class="div-2">
+      <div class="row">
+        <ul class="card-list">
+          <% donateList.forEach(function(user) { %>
+            <li class="card">
+              <div class="need-col">
+                <img src= <%= user.image %> >
+                <h3>Username: <%= user.id %>
+                </h3>
+                <p>Details: <%= user.details %>
+                </p>
+                <button class="text-wrapper-3"><a href="/cardpayment" style="color: #000000,">Donate now</a>
+              </div>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
+
+
+    </div>
+    <!--<p class="search-results-for">
+      <span class="text-wrapper">Search Results for </span> <span class="span">John Doe</span>
+    </p>
+    <div class="filter-search">
+      <div class="text-wrapper-2">Filter</div>
+      <img class="octicon-filter" src="img/octicon-filter-16.svg" />
+    </div>
+    <footer class="footer">
+      <div class="overlap-2">
+        <div class="phone">
+          <div class="element">+977 9812345678</div>
+          <img class="ph-phone-light" src="img/ph-phone-light.svg" />
+        </div>
+        <div class="email">
+          <div class="info-nepalcares-org">info@nepalcares.org</div>
+          <img class="img" src="img/material-symbols-mail-outline.svg" />
+        </div>
+        <img class="social-media" src="img/social-media.png" />
+        <p class="copyright">
+          <span class="text-wrapper">Copyright © 2023 NepalCares</span>
+          <span class="text-wrapper-3"> | All Rights Reserved</span>
+        </p>
+      </div>
+    </footer> -->
+  </div>
+  </div>
+</body>
+
+</html>
